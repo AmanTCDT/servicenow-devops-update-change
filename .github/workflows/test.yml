@@ -19,7 +19,8 @@ jobs:
         node-version: 14.x
 
     - name: Install dependencies
-      run: npm ci
+      run:  npm list @actions/core 
+            npm ci
 
     - name: Compile
       run: npm run build
